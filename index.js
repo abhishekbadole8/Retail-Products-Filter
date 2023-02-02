@@ -4,6 +4,8 @@
     const productContainerEl = document.getElementById("productContainer");
     const searchInputEl = document.getElementById("searchInput");
 
+    //URL Fetch
+
     const url = "https://fakestoreapi.com/products";
     const fetchProducts = async () => {
         try {
@@ -15,7 +17,9 @@
         }
     };
     const products = await fetchProducts();
-    console.log(products)
+    // console.log(products)     // return objects inside array
+
+    // Generate Products
 
     const generateProducts = (products) => {
         return `<div class="product_card">
